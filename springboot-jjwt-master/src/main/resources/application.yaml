@@ -1,0 +1,20 @@
+spring:
+  redis:
+      host: ENC(pDHZfsqmMVcKE/nhFgVTbwbhf6NnAIlAFd632yO6khM=)
+      port: 6379
+      password: ENC(Y2gw4ztAdg7SPULPoTZn5P4oxL5EA5g5a7B1KCElhKw=)
+
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/test?useSSL=false
+    username: root
+    password: 123456
+mybatis:
+  config-location: classpath:mybatis.xml
+debug: true
+server:
+  port: 8888
+jasypt:
+  encryptor:
+    algorithm: PBEWithMD5AndDES
+    password: 123456
